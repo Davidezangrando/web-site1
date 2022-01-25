@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Davide Zangrando Web Site</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #980c0c;
+  color: rgb(255, 255, 255);
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: rgb(82, 81, 81);
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Davide Zangrando</h1>
+  <p>Il <b>mio</b> primo sito!</p>
+</div>
+
+<div class="navbar">
+  <a href="#" class="active">Home</a>
+  <a href="https://mail.google.com/mail/u/0/#inbox/FMfcgzGmtXMgRcpHSNqChqjxQLTJpDGV?compose=GTvVlcSGMvhdbFzwnpDChTRLcBKzMXFvDwmHBtXdGHgQrCHzVwNxPWxGFrqFkmXcbhDWsJzFnhVSL">Contact me on Mail :)</a>
+  <a href="https://www.instagram.com/davide.zangrando/">If you want to follow me on IG!</a>
+  <a href="https://www.paypal.com/paypalme/davidezangrando1?v=1&utm_source=unp&utm_medium=email&utm_campaign=RT000269&utm_unptid=a5861004-6bf7-11ec-9b6b-3cecef6b009f&ppid=RT000269&cnac=IT&rsta=it_IT%28it-IT%29&cust=KRKW5FQ2GM6RQ&unptid=a5861004-6bf7-11ec-9b6b-3cecef6b009f&calc=f6305228215df&unp_tpcid=ppme-social-user-profile-created&page=main%3Aemail%3ART000269&pgrp=main%3Aemail&e=cl&mchn=em&s=ci&mail=sys&appVersion=1.69.0&xt=104038" class="right">Paypal</a>
+  <a href="#"> if you want to improve the site </a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Why sugo?</h2>
+    <br>
+    <center>
+    <h2> I don't know XD</h2>
+    </center>
+    <!--
+    <div class="fakeimg" style="height:200px;"> </div>
+    -->
+    <img src="home.png">
+  </div>
+  <div class="main">
+    <center>
+    <h2>Davide Zangrando</h2>
+    </center>
+    <h5>Title description, Jen 25, 2021</h5>
+    <p>Hi, I'm Davide. I'm 14 years old and my hobby is programming. I'm Italian and I love play Volleyball. My username is SUGO :)</p>
+    <br>
+    <h2>What I Know?</h2>
+    <h5>Title description, Jen 25, 2021</h5>
+    <p>Now I’m learning many programming languages both for web development and mobile development or for programs like C++. Now I’m learning Javascript and Dart (the language used in application development by Flutter)</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Thanks for visiting my Web Site :)</h2>
+</div>
+
+</body>
+</html>
